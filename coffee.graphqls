@@ -1,0 +1,15 @@
+query MyQuery {
+  search(term: "Coffee", location: "410 Townsend Street, San Francisco, CA") {
+    business {
+      id
+      name
+      photos
+      price
+      rating
+      location {
+        address1
+      }
+    }
+  }
+}
+
